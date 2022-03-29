@@ -8,14 +8,14 @@ import torch
 import torch.nn as nn
 import torchvision.models as models
 
-# Constuct model
+# Constuct torch model
 model = models.__dict__["resnet152"](pretrained=True)
 model.fc = nn.Linear(2048, 2)
 model = torch.nn.DataParallel(model)
 # print(type(model))
 # print(model)
 
-# Load model
+# Load torch model
 ckpt_path = "./models/model_best.pth"
 checkpoint = torch.load(ckpt_path)
 model.load_state_dict(checkpoint["state_dict"])
