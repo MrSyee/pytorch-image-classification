@@ -6,3 +6,6 @@ torchsummary==1.5.1
 torchvision==0.12.0
 onnx==1.11.0
 onnxruntime==1.11.0
+boto3==1.21.34
+
+python-dotenv==0.20.0

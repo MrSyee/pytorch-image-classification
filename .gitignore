@@ -4,3 +4,7 @@ data
 *.onnx
 
 .python-version
+.env
+
+aws
+awscliv2.zip
