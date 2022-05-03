@@ -37,7 +37,7 @@ trasnforms = transforms.Compose(
 
 ## load image
 ### ["./data/cat.0.jpg", "./data/cat.1.jpg", "./data/cat.2.jpg", "./data/dog.0.jpg", "./data/dog.1.jpg"]
-data_path = Path("./data/cat.1.jpg")
+data_path = Path("./data/dog.0.jpg")
 image = Image.open(data_path)
 image_tensor = trasnforms(image)
 image_tensor = image_tensor.unsqueeze(0)

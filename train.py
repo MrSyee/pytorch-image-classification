@@ -394,7 +394,7 @@ batch_size = 8
 # model
 nb_runs = 1
 nb_aug = 1
-epochs = 1
+epochs = 10
 lr = 1e-4
 clip = 0.001
 archs = ["resnet152"]
